@@ -1,0 +1,164 @@
+[
+  {
+    "source": "the status code is (\\d+)",
+    "steps": [
+      {
+        "name": "the status code is 200",
+        "aggregatedDurations": {
+          "average": 0.0471956,
+          "median": 0.0471956
+        },
+        "durations": [
+          {
+            "duration": 0.0471956,
+            "location": "GetBookByISBN.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "response includes the following$",
+    "steps": [
+      {
+        "name": "response includes the following",
+        "aggregatedDurations": {
+          "average": 0.3472351,
+          "median": 0.3472351
+        },
+        "durations": [
+          {
+            "duration": 0.3472351,
+            "location": "GetBookByISBN.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "a user retrieves the profile by id$",
+    "steps": [
+      {
+        "name": "a user retrieves the profile by id",
+        "aggregatedDurations": {
+          "average": 0.0163032,
+          "median": 0.0163032
+        },
+        "durations": [
+          {
+            "duration": 0.0163032,
+            "location": "Testcase1.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "a user retrieves the book by isbn",
+    "steps": [
+      {
+        "name": "a user retrieves the book by isbn",
+        "aggregatedDurations": {
+          "average": 1.8997111,
+          "median": 1.8997111
+        },
+        "durations": [
+          {
+            "duration": 1.8997111,
+            "location": "GetBookByISBN.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "response includes the following in any order",
+    "steps": [
+      {
+        "name": "response includes the following in any order",
+        "aggregatedDurations": {
+          "average": 0.035732,
+          "median": 0.035732
+        },
+        "durations": [
+          {
+            "duration": 0.035732,
+            "location": "GetBookByISBN.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "profile of an author with id one exists in the system$",
+    "steps": [
+      {
+        "name": "profile of an author with id one exists in the system",
+        "aggregatedDurations": {
+          "average": 0.0013008,
+          "median": 0.0013008
+        },
+        "durations": [
+          {
+            "duration": 0.0013008,
+            "location": "Testcase1.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "a book exists with an isbn of (.*)",
+    "steps": [
+      {
+        "name": "a book exists with an isbn of 9781451648546",
+        "aggregatedDurations": {
+          "average": 0.4927309,
+          "median": 0.4927309
+        },
+        "durations": [
+          {
+            "duration": 0.4927309,
+            "location": "GetBookByISBN.feature:4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "response contains the following details$",
+    "steps": [
+      {
+        "name": "response contains the following details",
+        "aggregatedDurations": {
+          "average": 0.028503,
+          "median": 0.028503
+        },
+        "durations": [
+          {
+            "duration": 0.028503,
+            "location": "Testcase1.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "the status code should be (\\d+)$",
+    "steps": [
+      {
+        "name": "the status code should be 200",
+        "aggregatedDurations": {
+          "average": 0.0003706,
+          "median": 0.0003706
+        },
+        "durations": [
+          {
+            "duration": 0.0003706,
+            "location": "Testcase1.feature:6"
+          }
+        ]
+      }
+    ]
+  }
+]

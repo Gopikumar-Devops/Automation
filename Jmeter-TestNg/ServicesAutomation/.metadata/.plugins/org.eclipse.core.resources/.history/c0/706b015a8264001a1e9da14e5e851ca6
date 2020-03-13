@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="API SUIT" parallel="tests" >
+    <test name="Test on REST API" >
+        <classes>
+            <class name="" />
+
+        </classes>
+    </test>
+</suite>

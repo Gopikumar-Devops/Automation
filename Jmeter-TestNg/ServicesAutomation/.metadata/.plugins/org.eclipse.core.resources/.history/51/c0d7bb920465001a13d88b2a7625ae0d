@@ -1,0 +1,44 @@
+package com.api.automation;
+
+import com.api.automation.DataPost;
+import com.jayway.restassured.http.ContentType;
+import com.jayway.restassured.path.json.JsonPath;
+import com.jayway.restassured.response.Response;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+import static com.jayway.restassured.RestAssured.*;
+import static org.testng.Assert.assertEquals;
+
+import java.util.HashMap;
+import java.util.List;
+
+public class DeleteReqTest {
+
+	@Parameters("host")
+	@Test
+	public void Test_01(String server) {
+		
+		/*
+		 * Response getresp = get(server+"/posts"); assertEquals(200,
+		 * getresp.getStatusCode()); String json = getresp.asString();
+		 */
+		//System.out.println(getresp.asString());
+
+		//JsonPath jp = new JsonPath(json);
+		//List values = jp.get("id");
+		
+		Response delresp =given().when()
+				.delete(server+"/posts?id="+1);	
+		/*
+		 * for (int i = 0; i < values.size(); i++) {
+		 * 
+		 * Response delresp = given() .contentType(ContentType.JSON)
+		 * .delete(server+"/posts?id="+jp.get("id["+i+"]"));
+		 * 
+		 * }
+		 */
+		
+	}
+}
+
+

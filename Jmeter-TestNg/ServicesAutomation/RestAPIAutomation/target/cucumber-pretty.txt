@@ -1,0 +1,15 @@
+Feature: Get book by ISBN
+
+  Scenario: User calls web service to get a book by its ISBN [90m# GetBookByISBN.feature:3[0m
+    [32mGiven [0m[32ma book exists with an isbn of [0m[32m[1m9781451648546[0m        [90m# BookTest.a_book_exists_with_isbn(String)[0m
+    [32mWhen [0m[32ma user retrieves the book by isbn[0m                   [90m# BookTest.a_user_retrieves_the_book_by_isbn()[0m
+    [32mThen [0m[32mthe status code is [0m[32m[1m200[0m                              [90m# BookTest.verify_status_code(int)[0m
+    [32mAnd [0m[32mresponse includes the following[0m                      [90m# BookTest.response_equals(String,String>)[0m
+    [32mAnd [0m[32mresponse includes the following in any order[0m         [90m# BookTest.response_contains_in_any_order(String,String>)[0m
+Feature: Get profile details of author
+
+  Scenario: User calls web service to get profile details of an author [90m# Testcase1.feature:3[0m
+    [32mGiven [0m[32mprofile of an author with id one exists in the system[0m        [90m# DemoTest.profile_of_an_author_with_id_one_exists_in_the_system$()[0m
+    [32mWhen [0m[32ma user retrieves the profile by id[0m                            [90m# DemoTest.a_user_retrieves_the_profile_by_id$()[0m
+    [32mThen [0m[32mthe status code should be [0m[32m[1m200[0m                                 [90m# DemoTest.verify_status_code(int)[0m
+    [32mAnd [0m[32mresponse contains the following details[0m                        [90m# DemoTest.response_contains(String,String>)[0m

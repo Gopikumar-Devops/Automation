@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="2.869083">
+<testcase classname="Get book by ISBN" name="User calls web service to get a book by its ISBN" time="2.822605">
+<system-out><![CDATA[Given a book exists with an isbn of 9781451648546...........................passed
+When a user retrieves the book by isbn......................................passed
+Then the status code is 200.................................................passed
+And response includes the following.........................................passed
+And response includes the following in any order............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Get profile details of author" name="User calls web service to get profile details of an author" time="0.046478">
+<system-out><![CDATA[Given profile of an author with id one exists in the system.................passed
+When a user retrieves the profile by id.....................................passed
+Then the status code should be 200..........................................passed
+And response contains the following details.................................passed
+]]></system-out>
+</testcase>
+</testsuite>

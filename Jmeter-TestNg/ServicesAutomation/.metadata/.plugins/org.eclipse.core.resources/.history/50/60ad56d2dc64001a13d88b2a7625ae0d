@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.650">
+  <properties />
+  
+  
+            <testcase name="testGetSingleUserProgrammatic" time="1.650" classname="services.BookTests" />
+      
+</testsuite>

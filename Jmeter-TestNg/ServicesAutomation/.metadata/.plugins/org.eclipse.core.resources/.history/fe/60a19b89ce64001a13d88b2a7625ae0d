@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [services]" parallel="tests">
+  <test name="API">
+    <classes>
+      <class name="services.BookTests"/>
+    </classes>
+  </test> <!-- API -->
+  <test name="API(failed)" parallel="tests">
+    <classes>
+      <class name="services.BookTests">
+        <methods>
+          <include name="Test_03"/>
+        </methods>
+      </class> <!-- services.BookTests -->
+    </classes>
+  </test> <!-- API(failed) -->
+</suite> <!-- Failed suite [services] -->

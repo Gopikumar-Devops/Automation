@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<?xml version="1.0" encoding="UTF-8"?>  
+<suite name="services"  verbose="1" >
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+    <test name="API" >
+    <parameter name="host" value="http://localhost:3000"/>
+            <!-- <classes>
+            <class name="services.GetReq" />
+        </classes> -->
+		<packages>
+			<package name="com.api.automation" />
+		</packages>
+    </test>
+</suite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="API"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="0.359">
+  <properties />
+  
+  
+            <testcase name="Test_03" time="0.030" classname="com.api.automation.PostReqTest" />
+                <testcase name="Test_02" time="0.285" classname="com.api.automation.PostReqTest" />
+                <testcase name="Test_01" time="0.044" classname="com.api.automation.PostReqTest" />
+      
+</testsuite>

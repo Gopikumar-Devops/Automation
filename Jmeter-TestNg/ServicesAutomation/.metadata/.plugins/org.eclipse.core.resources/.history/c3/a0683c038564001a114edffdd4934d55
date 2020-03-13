@@ -1,0 +1,30 @@
+package services;
+
+import static com.jayway.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.equalTo;
+
+import java.util.Arrays;
+
+import org.apache.http.HttpStatus;
+import org.testng.annotations.Test;
+
+
+public class BookTests
+{
+	private static String ENDPOINT_GET_PROFILE = "http://localhost:3000/posts";
+
+	@Test
+	public void testGetByISBN(){
+	
+		given().
+		param("id", 1).
+		when().
+		get(ENDPOINT_GET_PROFILE)
+		.then().
+		statusCode(HttpStatus.SC_OK).
+		body(	"id", equalTo(1),
+				"title", equalTo("json-server");
+				//"author", containsInAnyOrder("typicode"));
+	}
+}

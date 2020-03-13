@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [API SUIT]" parallel="tests">
+  <test name="Test on REST API">
+    <classes>
+      <class name="services.BookTests"/>
+    </classes>
+  </test> <!-- Test on REST API -->
+  <test name="Test on REST API(failed)" parallel="tests">
+    <classes>
+      <class name="services.BookTests">
+        <methods>
+          <include name="testGetByISBN"/>
+        </methods>
+      </class> <!-- services.BookTests -->
+    </classes>
+  </test> <!-- Test on REST API(failed) -->
+</suite> <!-- Failed suite [API SUIT] -->
